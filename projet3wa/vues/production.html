@@ -1,0 +1,11 @@
+<main class="container">
+	<section class="secondary">
+			<h1>All products :</h1>
+			<?php foreach($data as $onedata): ?>
+			<article>
+				<h2><?= $onedata['Title'] ?></h2>
+				<img src="<?= $onedata['Image'] ?>" alt="image">
+			</article>
+			<?php endforeach ?>
+	</section>
+</main>

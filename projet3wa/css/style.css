@@ -1,0 +1,449 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+html{
+  overflow-y: auto;
+  font-size: 100%;
+  min-height: 100%;
+}
+
+body{
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+  font-family: play, sans-serif;
+}
+
+header{
+	background-color: rgba(44, 62, 80,1.0);
+	box-shadow: 0 0 5px 1px black;
+}
+
+img,video{
+	max-width: 100%;
+}
+
+ul{
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+
+li{
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	padding: 0;
+}
+
+p{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+footer{
+	color: white;
+	text-align: center;
+	background-color: rgba(44, 62, 80,1.0);
+}
+
+h1, h2, h3{
+	margin: 0;
+	padding: 0.5rem;
+
+}
+
+h1{  
+	color: white;
+	background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 20%,transparent 20%, transparent);
+	text-transform: uppercase;
+}
+
+
+h2{
+	font-size: 1.25rem;
+	color: white;
+	background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 32%,transparent 10%, transparent);
+	margin-bottom: 0.5rem;
+}
+
+section{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navigation{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	transition: 2s;
+}
+
+.navigation a{
+	display: block;
+	padding: 1rem;
+}
+
+.navigation a:hover{
+	background-color: rgba(0,0,0,0.3);
+	
+}
+
+.principal{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.principal img{
+	width: 1250px;
+	height: 650px;
+}
+
+.banner{
+	text-align: center;
+	margin: 2rem;
+	font-size: 0;
+}
+
+.first{
+	position: absolute;
+	top: 55%;
+	left: 0;
+	background: transparent;
+	border: 1px solid black;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+
+.first:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.second{
+	position: absolute;
+	top: 55%;
+	right: 0;
+	background: transparent;
+	border: 1px solid black;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.second:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.content{
+	clear: both;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.skills{
+	width: 50%;
+	padding: 0.5rem;
+}
+
+.technologies{
+	font-size: 0;
+	width: 52%;
+	padding: 0.5rem;
+}
+
+.tools{
+	font-size: 0;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.tools h2{
+	text-align: left;
+}
+.inspiration{
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	font-size: initial;
+	padding: 0.5rem;
+}
+
+.inspiration p{
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+ .tools img{ 
+
+	display: inline-block;
+	margin: 0.2rem;
+	width: 15%;
+	vertical-align: bottom;
+}
+
+ .tools img:nth-last-of-type(3){ 
+	width: 25%;
+}
+
+ .tools img:nth-last-of-type(2){ 
+	width: 25%;
+}
+
+ .tools img:nth-last-of-type(1){ 
+	width: 25%;
+}
+
+.contact h1{
+	color: white;
+	font-size: 1.5rem;
+	text-align: left;
+	background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 30%,transparent 30%, transparent );
+}
+
+.contact{
+	background-color: rgba(44, 62, 80,1.0);
+	text-align: center;
+	color: white;
+	font-size: 0;
+
+}
+.contact li{
+
+	font-size: initial;
+	display: inline-block;
+	width: 75%;
+	text-align : left;
+	padding: 1rem;
+}
+
+.contact li:nth-last-of-type(even){
+	text-align : right;
+	vertical-align: top;
+	width: 25%;
+}
+
+.contact li:nth-last-of-type(1){
+	text-align: center;
+	width: 10%;
+}
+
+.contact li:nth-last-of-type(2){
+	text-align: center;
+	width: 10%;
+}
+.contact textarea{
+	resize: none;
+	width: 100%;
+}
+
+.contact input{
+	width: 100%;
+}
+
+.message{
+	border-left: 1px solid white;
+	padding: 0.5rem;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.fixed{
+	position : fixed;
+	left : 0;
+	width: 100%;
+	z-index: 444;
+	transition : 400ms;
+}
+
+.secondary article{
+	position: relative;
+	top: 0;
+	left:0;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(44, 62, 80,1.0);
+}
+
+.secondary h2{
+	background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 70%,transparent 30%, transparent );
+	font-size: initial;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -5px;
+}
+
+.secondary h1{
+	display: block;
+	font-size: 1.5rem;
+	background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 25%,transparent 25%, transparent );
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.secondary{
+	font-size: 0;
+	height: 2000px;
+}
+
+.cv{
+
+	text-align: center;
+	height: 2000px;
+}
+
+.cv h1{
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.lost{
+	text-align: center;
+	padding: 2rem;
+	height: 2000px;
+}
+.lost a{
+	color: red;
+}
+
+@media screen and (max-width: 1550px){
+
+	.principal img{
+		width: 800px;
+		height: 500px;
+	}
+
+	h2{
+		background: linear-gradient(45deg,rgba(44, 62, 80,1.0) 35%,transparent 30%, transparent );
+	}
+}
+
+@media screen and (max-width: 1050px){
+	h1{
+		background-color : rgba(44, 62, 80,1.0);
+		width: 100%;
+	}
+
+	.secondary h1{
+		background-color : rgba(44, 62, 80,1.0);
+	}
+
+	.principal{
+		display: block;
+	}
+	.first{
+		padding: 0.5rem;
+	}
+
+	.second{
+		padding: 0.5rem;
+	}
+
+	h2{
+		background-color : rgba(44, 62, 80,1.0);
+		width: 100%;
+	}
+
+	.content{
+		display: block;
+	}
+	.content article{
+		display: block;
+		width: 100%;
+	}
+	.technologies{
+		display: block;
+		width: 100%;
+	}
+
+	.contact{
+		display: block;
+	}
+
+	.contact li{
+		width: 100%;
+		display: block;
+		padding: 0;
+		text-align: left;
+	}
+
+	.contact li:nth-last-of-type(even){
+		width: 100%;
+		display: block;
+		padding: 0;
+		text-align: left;
+	}
+
+	.contact li:nth-last-of-type(2){
+		display: block;
+		margin-top: 0.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+
+
+	}
+	.contact li:nth-last-of-type(1){
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+
+	}
+
+	.cv{
+	margin: 2rem;
+	}
+
+}
+@media screen and (max-width: 650px){
+	.navigation {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.navigation a{
+		padding: 0.2rem;
+	}
+
+	.principal img{
+		width: 250px;
+		height: 125px;
+	}
+
+	.fa{
+		font-size: 0.5rem;
+	}
+
+	.secondary{
+		margin: 0.5rem;
+
+	}
+
+	.secondary h2{
+		width: 100%;
+		font-size: 0.5rem;
+		background-color : rgba(44, 62, 80,1.0);
+	}
+	
+}

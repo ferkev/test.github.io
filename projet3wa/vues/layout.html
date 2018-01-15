@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<title><?= $siteTitle ?></title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A website created by a student in web developpement to become a professionnel 
+	of web developpement">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navigation">
+			<a href="home">Home</a>
+			<a href="production">Production</a>
+			<a href="aboutme">About Me</a>
+		</nav>
+	</header>
+	<?php include $template.".html" ?>
+	<footer>
+		<ul>
+			<li>
+				<p>All works is copyrighted to their respective owners.</p>
+			</li>
+			<li>
+				<p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Ferkev</p>
+			</li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"
+  	integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  	crossorigin="anonymous"></script>
+  	<script src="script/main.js"></script>
+	<script src="script/scroll.js"></script>
+	<script src="script/form.js"></script>
+</body>
+</html>
